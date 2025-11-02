@@ -23,7 +23,7 @@ const Hero = () => {
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/20" />
 
-        {/* RSVP Tag - Top Right */}
+        {/* Submit Tag - Top Right */}
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -32,7 +32,7 @@ const Hero = () => {
         >
           <div className="px-4 py-2 bg-green-400/10 border border-green-400/50 rounded-full">
             <p className="text-sm font-semibold text-green-400 uppercase tracking-wider">
-              RSVP
+              SUBMIT NOW!
             </p>
           </div>
         </motion.div>
@@ -75,12 +75,14 @@ const Hero = () => {
 
             {/* CTA Button */}
             <div className="pt-2 sm:pt-4">
-              <Button
-                className="rounded-full px-6 sm:px-8 lg:px-10 py-2 sm:py-4 bg-gradient-to-r from-green-400/30 to-emerald-600/30 hover:from-green-400/50 hover:to-emerald-600/50 hover:scale-105 backdrop-blur-lg border border-green-400/50 font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300"
-                style={{ fontFamily: "Baskerville, serif" }}
-              >
-                RSVP Now
-              </Button>
+              <a href="/challenges">
+                <Button
+                  className="rounded-full px-6 sm:px-8 lg:px-10 py-2 sm:py-4 bg-gradient-to-r from-green-400/30 to-emerald-600/30 hover:from-green-400/50 hover:to-emerald-600/50 hover:scale-105 backdrop-blur-lg border border-green-400/50 font-semibold text-sm sm:text-base lg:text-lg transition-all duration-300"
+                  style={{ fontFamily: "Baskerville, serif" }}
+                >
+                  🚀 SUBMIT YOUR MADNESS! 💀
+                </Button>
+              </a>
             </div>
           </div>
         </motion.div>

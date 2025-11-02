@@ -8,7 +8,7 @@ import FloatingChemical from "./FloatingChemical";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-br from-black via-slate-900 to-black flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-screen bg-gradient-to-br from-black via-slate-900 to-black flex items-center justify-center overflow-hidden pt-20">
       {/* Background gradient orbs */}
       <div className="absolute top-20 left-10 w-80 h-80 bg-green-600/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-emerald-600/10 rounded-full blur-3xl"></div>
@@ -60,9 +60,6 @@ export default function HeroSection() {
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
                 </button>
               </Link>
-              <button className="px-7 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-base border border-white/30 transition-all duration-300 hover:border-green-400/50">
-                Learn More
-              </button>
             </div>
           </div>
 
